@@ -1,0 +1,17 @@
+{
+  "name": "autoinspector-challenge",
+  "version": "1.0.0",
+  "description": "- Comentame un poco sobre en lo que estuviste trabajando los ultimos años - Comentame algo nuevo que hayas aprendido esta semana - Como te introduciste en el mundo de la programacion?",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd api && npm run dev",
+    "client": "cd app && npm run dev",
+    "start": "cd api && npm i && cd .. && cd app && cd .. && npm i && concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Luciano Alvarez",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
